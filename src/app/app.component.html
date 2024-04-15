@@ -1,12 +1,17 @@
-<app-navbar></app-navbar>
-<app-list-group></app-list-group>
-{{ title }}
+
+<div style="font-size: 30px; margin: 5px 0px 20px 0px;">
+  {{title}}
+</div>
+
+<!-- <app-navbar></app-navbar> -->
+<app-list-group [data]="personel"></app-list-group>
+<!-- {{ title }}
 <app-button variant="warning" (buttonClick) ="onButtonClick()">
  
   Button
-</app-button>
+</app-button> -->
 
-<ul>
+<!-- <ul>
   <ng-container *ngFor="let product of products">
     <li *ngIf="!product.discontinued; else discontinuedElse">
       {{ product.name }} - {{ product.price }}
@@ -16,14 +21,16 @@
     </ng-template>
   </ng-container>
 
-  <!-- @for(product of products; track product.name) {
+  @for(product of products; track product.name) {
     @if(!product.discontinued) {
       <li>{{ product.name }} - {{ product.price }}</li>
     }
     @else {
       <li>{{ product.name }} discontinued.</li>
     }
-  } -->
-</ul>
+  } 
+</ul> -->
 
-<app-footer></app-footer>
+
+
+<!-- <app-footer></app-footer> -->

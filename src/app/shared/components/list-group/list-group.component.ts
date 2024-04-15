@@ -25,5 +25,8 @@ type ListGroupVariant =
 export class ListGroupComponent {
   @Input() listGroupItemType: ListGroupItemType = 'active';
   @Input() listGroupItemVariant: ListGroupItemVariant = 'primary';
-  @Input() listGroupVariant : ListGroupVariant = 'flush';
+  @Input() listGroupVariant1 : ListGroupVariant = 'flush';
+  @Input() listGroupVariant2 : ListGroupVariant = 'horizontal';
+  @Input() listGroupVariant3 : ListGroupVariant = 'numbered';
+  @Input() data: any[] = [];
 }

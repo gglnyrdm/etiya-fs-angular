@@ -10,7 +10,7 @@ import { SharedModule } from './shared/shared.module';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'etiya-fs-angular';
+  title = 'List Group Component Configuration - Workshop 1 - Pair 2';
 
   products = [
     {
@@ -29,6 +29,47 @@ export class AppComponent {
       discontinued: false,
     },
   ];
+
+  personel = [
+    {
+      id: 1,
+      firstName: 'Doğukan',
+      lastName: 'Koc',
+      title: 'Software Development, Specialist',
+      company: 'Etiya',
+      listGroupItemType: 'active',
+      listGroupItemVariant: 'primary',
+    },
+    {
+      id: 2,
+      firstName: 'Sevda',
+      lastName: 'Simsek',
+      title: 'Software Development, Specialist',
+      company: 'Etiya',
+      listGroupItemType: 'active',
+      listGroupItemVariant: 'secondary',
+    },
+    {
+      id: 3,
+      firstName: 'Gülin',
+      lastName: 'Yardimoglu',
+      title: 'Software Development, Specialist',
+      company: 'Etiya',
+      listGroupItemType: 'disabled',
+      listGroupItemVariant: 'warning',
+    },
+    {
+      id: 4,
+      firstName: 'Etkin',
+      lastName: 'Karadag',
+      title: 'Business Analyst, Specialist',
+      company: 'Etiya',
+      listGroupItemType: 'disabled',
+      listGroupItemVariant: 'danger',
+    }
+  ];
+
+  
 
   onButtonClick() {
     console.log('Button clicked');

@@ -1,8 +1,39 @@
-<p>list-group works!</p>
+<!-- <p>list-group works!</p>
 <ul class="list-group list-group-{{ listGroupVariant }}">
     <li class="list-group-item {{ listGroupItemType }}" >An active item</li>
     <li class="list-group-item list-group-item-{{ listGroupItemVariant }}">A second item</li>
     <li class="list-group-item">A third item</li>
     <li class="list-group-item">A fourth item</li>
     <li class="list-group-item">And a fifth one</li>
-  </ul>
+  </ul> -->
+
+
+<!-- <ul class="list-group">
+    <ng-container *ngFor="let item of data">
+        <li class="list-group-item list-group-item-{{item.listGroupItemVariant}} {{item.listGroupItemType}}">{{item.id}} | {{item.firstName}} | {{item.lastName}}
+          | {{item.title}} | {{item.company}}</li>
+    </ng-container>
+</ul> -->
+
+<ul class="list-group list-group-{{ listGroupVariant1 }}">
+  <ng-container *ngFor="let item of data">
+      <li class="list-group-item list-group-item-{{item.listGroupItemVariant}} {{item.listGroupItemType}}">{{item.id}} | {{item.firstName}} | {{item.lastName}}
+        | {{item.title}} | {{item.company}}</li>
+  </ng-container>
+</ul>
+<br>
+<br>
+<ul class="list-group list-group-{{ listGroupVariant2 }}">
+  <ng-container *ngFor="let item of data">
+      <li class="list-group-item list-group-item-{{item.listGroupItemVariant}} {{item.listGroupItemType}}">{{item.id}} | {{item.firstName}} | {{item.lastName}}
+        | {{item.title}} | {{item.company}}</li>
+  </ng-container>
+</ul>
+<br>
+<br>
+<ul class="list-group list-group-{{ listGroupVariant3 }}">
+  <ng-container *ngFor="let item of data">
+      <li class="list-group-item list-group-item-{{item.listGroupItemVariant}} {{item.listGroupItemType}}">{{item.id}} | {{item.firstName}} | {{item.lastName}}
+        | {{item.title}} | {{item.company}}</li>
+  </ng-container>
+</ul>
